@@ -14,6 +14,73 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
+	<script type="text/javascript">
+		
+			function menuBox(){
+
+
+
+						if(document.getElementById('hamburger').dataset.src=="img/hamburger64.png") {
+
+
+								document.getElementById('hamburger').dataset.src="img/close64.svg";
+								document.getElementById('hamburger').src="img/close64.svg";
+
+						const sections = document.querySelectorAll('section');
+
+						// Loop through each section and set its display style to 'none'
+						sections.forEach(section => {
+						  section.style.display = 'none';
+						});
+
+
+						}
+
+
+						else {
+
+								document.getElementById('hamburger').dataset.src="img/hamburger64.png";
+							   document.getElementById('hamburger').src="img/hamburger64.png";
+							
+
+
+						const sections = document.querySelectorAll('section');
+
+						// Loop through each section and set its display style to 'none'
+						sections.forEach(section => {
+						  section.style.display = 'flex';
+						});
+
+
+									if(innerWidth>488) {
+
+									document.getElementById('banner-new').style.display="none";
+
+									}
+
+
+									else {
+
+									document.getElementById('banner-new').style.display="flex";
+
+									}
+
+
+
+						}
+						
+
+
+
+			}
+
+
+
+
+
+
+	</script>
+
 </head>
 <body>
 
@@ -52,7 +119,10 @@
 							</div>
 
 
-							<img id="hamburger" class="header-info" src="img/hamburger64.png" width="48" height="48">
+							<img onclick="menuBox();" data-src="img/hamburger64.png" id="hamburger" class="header-info" src="img/hamburger64.png" width="48" height="48">
+
+
+
 			</div>
 
 </header>
@@ -1437,7 +1507,7 @@ We are expanding our team and are currently recruiting qualified tutors in all s
 
 
 
-<footer>
+<section id="footer">
 
 			<div class="footer" id="footer-body">
 
@@ -1504,7 +1574,21 @@ We are expanding our team and are currently recruiting qualified tutors in all s
 
 			</small>
 
-</footer>
+</section>
+
+
+<div id="menu-box">
+	
+						<a class="menu-box" href="#">Subjects Covered</a>
+						<a class="menu-box" href="#">Tutoring Modalities</a>
+						<a class="menu-box" href="#">Tutoring Rates</a>
+						<a class="menu-box" href="#">Why Choose Us</a>
+						<a class="menu-box" href="#">Careers</a>
+
+
+
+
+</div>
 
 
 </body>
