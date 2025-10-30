@@ -2340,13 +2340,15 @@ small {
 
 
 
-#banner-new {
+
+    #banner-new {
 
 			display: flex;
 			width: 100%;
 			padding: var(--horizontalSpace) var(--verticalSpace);
+			background-color: var(--white);
 
-}
+    }
 
 	#banner-new #banner {
 
@@ -2357,15 +2359,15 @@ small {
         border-radius: var(--gap8);
         row-gap: var(--gap12);
 
-    padding: var(--gap8) var(--horizontalSpace);
-    display: flex;
-    justify-content: space-between;
-    column-gap: normal;
-    /* align-items: center; */
-    background-color: var(--secondary);
-    color: var(--primary);
-    font-family: var(--bodyFont);
-    font-size: var(--h5);
+        padding: var(--gap8) var(--horizontalSpace);
+        display: flex;
+        justify-content: space-between;
+        column-gap: normal;
+        /* align-items: center; */
+        background-color: var(--darker);
+        color: var(--primary);
+        font-family: var(--bodyFont);
+        font-size: var(--h5);
 
 
 	}
@@ -2373,11 +2375,9 @@ small {
 	#banner-new #banner .banner {
 
 					column-gap: var(--gap12);
-					color: var(--white);
+					color: var(--primary);
 
 	}
-
-
 
 	#banner {
 
