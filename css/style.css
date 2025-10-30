@@ -473,34 +473,34 @@ button {
 
 #subject-maths-icon {
 
-					background-image: url('../img/mathematics-desktop.png');
+					background-image: url('../img/maths.svg');
 	
 }
 
 #subject-english-icon {
 
-					background-image: url('../img/mathematics-desktop.png');
+					background-image: url('../img/english.svg');
 	
 }
 
 
 #subject-physics-icon {
 
-					background-image: url('../img/mathematics-desktop.png');
+					background-image: url('../img/physics.svg');
 	
 }
 
 
 #subject-chemistry-icon {
 
-					background-image: url('../img/mathematics-desktop.png');
+					background-image: url('../img/chemistry.svg');
 	
 }
 
 
 #subject-biology-icon {
 
-					background-image: url('../img/mathematics-desktop.png');
+					background-image: url('../img/biology.svg');
 	
 }
 
@@ -829,6 +829,7 @@ button {
 					align-items: flex-end;
 					padding: var(--gap64);
 					background-color: var(--primary);
+					column-gap: normal;
 
 		}
 
@@ -840,6 +841,7 @@ button {
 					row-gap: var(--gap64);
 					align-items: flex-start;
 					color: var(--white) !important;
+					width: 50%;
 		}
 
 
@@ -1730,6 +1732,15 @@ small {
 	}
 
 
+	#choose-icon {
+
+
+						width: var(--gap156);
+						height: var(--gap156);
+						min-width: var(--gap156);
+
+	}
+
 }
 
 
@@ -1752,6 +1763,10 @@ small {
 			--alphanum: calc(0.8 * 22px);
 
 			--gap280: calc(0.8 * 156px);
+
+			--subjectIcons: calc(0.8 * 128px);
+
+
 
 	}
 
@@ -1868,6 +1883,15 @@ small {
 
 						}
 
+	#choose-icon {
+
+
+						width: var(--gap128);
+						height: var(--gap128);
+						min-width: var(--gap128);
+
+	}
+
 
 }
 
@@ -1894,6 +1918,7 @@ small {
 
 			--gap280: calc(0.8 * 96px);
 
+			--subjectIcons: calc(0.8 * 96px);
 
 
 	}
@@ -2037,6 +2062,8 @@ small {
 	}
 
 
+
+
 	#footer-body {
 
 
@@ -2135,6 +2162,46 @@ small {
 		}
 
 
+	#choose-icon {
+
+
+						width: var(--gap100);
+						height: var(--gap100);
+						min-width: var(--gap100);
+
+	}
+
+
+		#free-section {
+
+
+					display: flex;
+					flex-direction: column;
+
+					justify-content: space-between;
+					align-items: center;
+					padding: var(--gap64);
+					background-color: var(--primary);
+					row-gap: var(--gap32);
+
+		}
+
+
+		#free-text {
+
+					display: flex;
+					flex-direction: column;
+					row-gap: var(--gap64);
+					align-items: center;
+					color: var(--white) !important;
+					width: 100%;
+		}
+
+
+		#free-title, #free-body {
+
+						text-align: center !important;
+		}
 
 
 }
@@ -2395,11 +2462,16 @@ small {
 
 
 #choose-title {
+
     display: flex;
     flex-direction: column;
     row-gap: var(--gap32);
 
     align-items: center;
+
+    justify-content: center;
+
+
 
 }
 
@@ -2408,6 +2480,40 @@ small {
 
 		text-align: center;
 }
+
+
+
+				#recruiting {
+	
+							display: flex;
+							flex-direction: column;
+							justify-content: space-between;
+							align-items: center;
+
+							row-gap: var(--gap64);
+
+
+				}
+
+
+				#recruiting-text {
+
+							align-items: center;
+				}
+
+					.recruiting {
+
+
+							width: 100%;
+					}
+
+
+				#recruiting-title, #recruiting-body {
+
+							text-align: center !important;
+
+				}
+
 
 
 }
@@ -2501,7 +2607,14 @@ small {
 
 
 				flex-direction: column;
-				align-items: flex-start !important;
+				align-items: center; !important;
+	}
+
+
+	#footer-body {
+
+
+				justify-content: center !important;
 	}
 
 
@@ -2510,6 +2623,31 @@ small {
 
 				width: 100%;
 	}
+
+
+	.footer-body {
+
+
+					align-items: center;
+					row-gap: var(--gap12);
+
+	}
+
+
+	#social {
+
+
+				width: auto;
+
+	}
+
+
+	.social {
+
+
+				width: 100%;
+	}
+
 
 }
 
