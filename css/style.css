@@ -512,30 +512,39 @@ button {
 }
 
 
-.subject-english {
+#subject-english {
 
-
-	
-}
-
-
-.subject-physics {
-
+					background-image: url('../img/english photo.svg') !important;
+					background-size: cover;
+					background-position: right;
 
 	
 }
 
 
-.subject-chemistry {
+#subject-physics {
 
-
+					background-image: url('../img/physics photo.svg') !important;
+					background-size: cover;
+					background-position: center;
 	
 }
 
 
-.subject-biology {
+#subject-chemistry {
+
+					background-image: url('../img/chemistry photo.svg') !important;
+					background-size: cover;
+					background-position: center;
+	
+}
 
 
+#subject-biology {
+
+					background-image: url('../img/biology photo.svg') !important;
+					background-size: cover;
+					background-position: top;
 	
 }
 
@@ -656,14 +665,14 @@ button {
 #in-person-img {
 
 
-					background-image: url('../img/online class resized for Desktop.png');
+					background-image: url('../img/in-person 30percent.svg');
 }
 
 
 #small-group-img {
 
 
-					background-image: url('../img/online class resized for Desktop.png');
+					background-image: url('../img/small group.svg');
 }
 
 
@@ -2006,9 +2015,9 @@ small {
 		.banner-img {
 
 					background-image: url("../img/bulb desktop.png");
-					width: var(--gap24);
-					min-width: var(--gap24);
-					height: var(--gap20);
+        			width: var(--gap32);
+        			min-width: var(--gap32);
+        			height: var(--gap24);
 		}
 
 
@@ -2573,7 +2582,9 @@ small {
 		#in-person-img {
 
 
-				background-image: url('../img/in-person.svg');
+				background-image: url('../img/in-person-big.svg');
+				background-size: cover;
+				background-position: top;
 
 		}
 }
