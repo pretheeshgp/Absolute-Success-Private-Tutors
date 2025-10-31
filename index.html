@@ -41,6 +41,34 @@
 			}
 
 
+document.addEventListener('DOMContentLoaded', function() {
+
+    var myForm = document.getElementById('book-now');
+
+    myForm.addEventListener('submit', function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Get form data
+        var formData = new FormData(myForm); // For easier handling of form data
+
+        // Perform AJAX request (using fetch API as an example)
+        fetch('congrats.html', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            // Handle success response
+        })
+        .catch(error => {
+            console.error('Fetch Error:', error);
+            // Handle error response
+        });
+    });
+});
+
 
 
 	</script>
@@ -127,8 +155,8 @@
 				<div class="hero-text" id="btn-hero">
 					
 
-						<button id="redBtn">Book Your Free Trial Lesson</button>
-						<button id="whiteBtn">Talk With Us Today</button>
+						<button type="submit" id="redBtn">Book Your Free Trial Lesson</button>
+						<button type="submit" id="whiteBtn">Talk With Us Today</button>
 
 				</div>
 
@@ -751,7 +779,7 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 				</div>
 
 
-				<button class="free-section" id="redBtn">Book Your Free Trial Lesson</button>
+				<button type="submit" class="free-section" id="redBtn">Book Your Free Trial Lesson</button>
 
 
 </section>
@@ -1246,34 +1274,22 @@ Discounts apply to prepaid bookings only. Block lessons must be used within 6 mo
 		<div class="booking-section" id="booking-form">
 			
 
-						<!--
+					<form method="POST" id="book-now" class="booking-section">
 
-
-		
-						-->
-
-
-						<input placeholder="FIRST NAME*" type="text" name="fname" id="fname" />
-						<input placeholder="LAST NAME*" type="text" name="lname" id="lname" />
-						<input placeholder="EMAIL*" type="email" name="email" id="email" />
-						<input placeholder="PHONE*" type="number" name="phone" id="phone" />
+						<input required placeholder="FIRST NAME*" type="text" name="fname" id="fname" />
+						<input required placeholder="LAST NAME*" type="text" name="lname" id="lname" />
+						<input required placeholder="EMAIL*" type="email" name="email" id="email" />
+						<input required placeholder="PHONE*" type="number" name="phone" id="phone" />
 						<textarea name="message" id="message" placeholder="MESSAGE*"></textarea>
 
-						<button class="fullBtn" id="redBtn">Book Your Free Trial Lesson</button>
+						<button type="submit" class="fullBtn" id="redBtn">Book Your Free Trial Lesson</button>
 
 
-						<!--
-						
+					</form>
 
 
-						-->
 				<p class="booking-footer book-text not-available" id="booking-footer-info">
 					
-						<!--
-
-
-
-						-->
 
 						*Please fill the form and submit. We would get in touch shortly to arrange your first free 30 minutes lesson.
 

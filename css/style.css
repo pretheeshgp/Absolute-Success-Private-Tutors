@@ -263,7 +263,7 @@ section {
 					justify-content: flex-end;
 					column-gap: var(--gap96);
 					align-items: center;
-					padding: var(--gap32) var(--horizontalSpace);
+					padding: var(--gap32) 0px;
 
 
 					font-family: var(--titleFont);
@@ -1399,6 +1399,16 @@ button {
 								}
 
 
+								#book-now {
+
+										display: flex;
+										flex-direction: column;
+										row-gap: var(--gap48);
+										width: 100%;
+
+								}
+
+
 							input {
 	
 										border: solid var(--gap1) var(--white);
@@ -1733,7 +1743,8 @@ small {
 									font-family: var(--titleFont);
 									font-size: var(--h3);
 
-									height: 100vh;
+									min-height: 100vh;
+									height: auto;
 						}
 
 
