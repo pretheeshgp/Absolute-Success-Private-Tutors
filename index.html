@@ -16,59 +16,25 @@
 
 	<script type="text/javascript">
 		
-			function menuBox(){
+			function menubox(){
+
+
+						document.getElementById('main-screen').style.display='none';
+
+						document.getElementById('menu-box').style.display='flex';
 
 
 
-						if(document.getElementById('hamburger').dataset.src=="img/hamburger64.png") {
+			}
 
-
-								document.getElementById('hamburger').dataset.src="img/close64.svg";
-								document.getElementById('hamburger').src="img/close64.svg";
-
-						const sections = document.querySelectorAll('section');
-
-						// Loop through each section and set its display style to 'none'
-						sections.forEach(section => {
-						  section.style.display = 'none';
-						});
-
-
-						}
-
-
-						else {
-
-								document.getElementById('hamburger').dataset.src="img/hamburger64.png";
-							   document.getElementById('hamburger').src="img/hamburger64.png";
-							
-
-
-						const sections = document.querySelectorAll('section');
-
-						// Loop through each section and set its display style to 'none'
-						sections.forEach(section => {
-						  section.style.display = 'flex';
-						});
-
-
-									if(innerWidth>488) {
-
-									document.getElementById('banner-new').style.display="none";
-
-									}
-
-
-									else {
-
-									document.getElementById('banner-new').style.display="flex";
-
-									}
+			function closebox(){
 
 
 
-						}
-						
+						document.getElementById('menu-box').style.display='none';
+
+
+						document.getElementById('main-screen').style.display='block';
 
 
 
@@ -77,14 +43,12 @@
 
 
 
-
-
 	</script>
 
 </head>
-<body>
+<body onresize="closebox();">
 
-
+<div id="main-screen">
 <header>
 	
 			<img src="img/logo-png.png" width="125px" height="125px">
@@ -119,7 +83,8 @@
 							</div>
 
 
-							<img onclick="menuBox();" data-src="img/hamburger64.png" id="hamburger" class="header-info" src="img/hamburger64.png" width="48" height="48">
+							<div id="hamburger" onclick="menubox();" class="header-info"></div>
+
 
 
 
@@ -1576,8 +1541,29 @@ We are expanding our team and are currently recruiting qualified tutors in all s
 
 </section>
 
+</div>
+
 
 <div id="menu-box">
+
+			<header>
+				
+						<img src="img/logo-png.png" width="125px" height="125px">
+
+						<div id="header-info">
+							
+
+
+
+										<div id="close" onclick="closebox();" class="header-info"></div>
+
+
+
+
+						</div>
+
+			</header>
+
 	
 						<a class="menu-box" href="#">Subjects Covered</a>
 						<a class="menu-box" href="#">Tutoring Modalities</a>
