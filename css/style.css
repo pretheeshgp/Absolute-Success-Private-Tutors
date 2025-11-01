@@ -793,15 +793,19 @@ button {
 				row-gap: var(--gap32);
 				padding: var(--gap32);
 
+				border-radius: var(--gap12);
+
 	}
 
 
 	#choose-title {
 
 				display: flex;
-				justify-content: flex-start;
-				column-gap: var(--gap32);
+				flex-direction: column;
+				justify-content: space-between;
 				align-items: center;
+				row-gap: var(--gap32);
+				text-align: center;
 
 
 	}
@@ -2799,4 +2803,19 @@ small {
 
     width: 45%;
 	}
+}
+
+
+@media (max-width: 600px) and (min-width: 400px) {
+
+
+    #choose-title {
+    	
+        display: flex;
+        flex-direction: row;
+        column-gap: var(--gap32);
+        align-items: center;
+        justify-content: space-between;
+    }
+
 }

@@ -49,11 +49,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Prevent the default form submission
         event.preventDefault();
 
+        alert(event);
+
         // Get form data
         var formData = new FormData(myForm); // For easier handling of form data
 
         // Perform AJAX request (using fetch API as an example)
-        fetch('congrats.html', {
+        fetch('congrats.php', {
             method: 'POST',
             body: formData
         })
@@ -62,10 +64,14 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(data);
             // Handle success response
         })
-        .catch(error => {
-            console.error('Fetch Error:', error);
+       /* .catch(error => {
+         //   console.error('Fetch Error:', error);
             // Handle error response
         });
+
+       */
+
+        
     });
 });
 
@@ -253,8 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 					<p class="section-body">
 						
-								At Absolute Success Private Tutors, we specialise in high-quality one-to-one and small group tutoring across variety of subjects.
-
+Absolute Success Private Tutors specialise in high quality one-to-one and small group tutoring across a variety of subjects both online and in-person.
 					</p>
 
 					<div class="subjects" id="subject-boxes">
@@ -560,7 +565,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 			<div class="choose-section section-title">Why Choose Absolute Success Private Tutors</div>
 
-			<div class="choose-section section-body">At Absolute Success Private Tutors, we specialise in high-quality one-to-one and small group tutoring across variety of subjects.</div>
+			<div class="choose-section section-body">Experienced, qualified tutors, passionate about education. Over 25 years teaching experience.</div>
 
 
 			<div class="choose-section" id="choose-box">
@@ -580,7 +585,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 									</div>
 
-
+<!--
 									<div class="choose-info choose-info-line"></div>
 
 
@@ -590,7 +595,7 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 
 									</p>
 
-
+-->
 
 							</div>
 
@@ -611,14 +616,7 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 									</div>
 
 
-									<div class="choose-info choose-info-line"></div>
 
-
-									<p class="choose-info" id="choose-body">
-										
-Experienced, qualified tutors passionate about education. Over 25 years teaching experience.
-
-									</p>
 
 
 
@@ -642,15 +640,6 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 									</div>
 
 
-									<div class="choose-info choose-info-line"></div>
-
-
-									<p class="choose-info" id="choose-body">
-										
-Experienced, qualified tutors passionate about education. Over 25 years teaching experience.
-
-									</p>
-
 
 
 							</div>
@@ -673,14 +662,6 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 									</div>
 
 
-									<div class="choose-info choose-info-line"></div>
-
-
-									<p class="choose-info" id="choose-body">
-										
-Experienced, qualified tutors passionate about education. Over 25 years teaching experience.
-
-									</p>
 
 
 
@@ -704,14 +685,6 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 									</div>
 
 
-									<div class="choose-info choose-info-line"></div>
-
-
-									<p class="choose-info" id="choose-body">
-										
-												Experienced, qualified tutors passionate about education. Over 25 years teaching experience.
-
-									</p>
 
 
 
@@ -734,15 +707,6 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 
 									</div>
 
-
-									<div class="choose-info choose-info-line"></div>
-
-
-									<p class="choose-info" id="choose-body">
-										
-Experienced, qualified tutors passionate about education. Over 25 years teaching experience.
-
-									</p>
 
 
 
@@ -772,7 +736,7 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 
 						<p class="free-text" id="free-body">
 							
-										Click below to book your free trial and take the first step toward academic confidence and achievement.
+										Click below to book your free trial and take the first step towards academic confidence and achievement.
 
 						</p>
 
@@ -933,7 +897,7 @@ Experienced, qualified tutors passionate about education. Over 25 years teaching
 						<p class="rates" id="rates-note">
 
 
-All lessons are 60 minutes. Small group sessions have a maximum of 4 students per class.
+All lessons are 60 minutes long. Small group sessions have a maximum of 4 students per class.
 						</p>
 <!-- 
 
@@ -969,7 +933,7 @@ All lessons are 60 minutes. Small group sessions have a maximum of 4 students pe
 
 										<div class="last-box-info discount-info" id="box-info">
 											
-												<div id="box-info-name"> eg: Pre-book 10 sessions and save 5% </div>
+												<div id="box-info-name"> Pre-book 10 sessions and save 5% </div>
 												<div id="box-info-value"> 5% off Total </div>
 
 
@@ -987,7 +951,7 @@ All lessons are 60 minutes. Small group sessions have a maximum of 4 students pe
 
 										<div class="last-box-info discount-info" id="box-info">
 											
-												<div id="box-info-name">eg: Pre-book 20 sessions and save 10%</div>
+												<div id="box-info-name"> Pre-book 20 sessions and save 10%</div>
 												<div id="box-info-value">10% off Total</div>
 
 
@@ -1003,7 +967,7 @@ All lessons are 60 minutes. Small group sessions have a maximum of 4 students pe
 
 										<div class="last-box-info discount-info" id="box-info">
 											
-												<div id="box-info-name">eg: Enrol multiple children and save 5% each</div>
+												<div id="box-info-name"> Enrol multiple children and save 5% each</div>
 												<div id="box-info-value">5% off per sibling</div>
 
 
@@ -1509,7 +1473,7 @@ We are expanding our team and are currently recruiting qualified tutors in all s
 						<small class="bottom-space">REGISTERED ADDRESS</small>
 
 						<small>Absolute Success Private Tutors Ltd</small>
-						<small>34 Dagnall Park,</small>
+						<small>34D Dagnall Park,</small>
 						<small>London</small>
 						<small>SE25 5PH</small>
 
