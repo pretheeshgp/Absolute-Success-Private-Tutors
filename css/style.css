@@ -355,16 +355,29 @@ button {
 
 #redBtn {
 
+		background-color: rgb(211,46,68,0.9);
+
+}
+
+
+#redBtn:hover {
+
 		background-color: var(--secondary);
+
+
 }
 
 #whiteBtn {
 
-			border: solid var(--gap1) var(--white);
+			border: solid var(--gap2) var(--secondary);
 			background: none;
 }
 
+#whiteBtn:hover {
 
+			border: solid var(--gap2) var(--white);
+			background: none;
+}
 
 
 #banner {
